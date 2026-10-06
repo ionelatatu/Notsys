@@ -1,4 +1,4 @@
-package com.notsys.core.port.`in`
+package com.notsys.core.port.inbound
 
 import com.notsys.core.domain.User
 

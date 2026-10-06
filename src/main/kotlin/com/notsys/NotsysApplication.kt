@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class NotsysApplication
 
 fun main(args: Array<String>) {
-	runApplication<NotsysApplication>(*args)
+    runApplication<NotsysApplication>(*args)
 }

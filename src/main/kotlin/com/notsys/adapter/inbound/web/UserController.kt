@@ -1,6 +1,6 @@
-package com.notsys.adapter.`in`.web
+package com.notsys.adapter.inbound.web
 
-import com.notsys.core.port.`in`.GetUserUseCase
+import com.notsys.core.port.inbound.GetUserUseCase
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/users")
-class UserController(
-    private val getUserUseCase: GetUserUseCase,
-) {
+class UserController(private val getUserUseCase: GetUserUseCase) {
 
     @GetMapping("/{id}")
     fun getUser(@PathVariable id: Long): ResponseEntity<UserResponse> {
